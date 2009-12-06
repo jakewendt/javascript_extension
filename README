@@ -1,26 +1,50 @@
+javascript_extension.js
+	include(file)
+		append another javascript file to the head tag
+	params()
+		url search params converted into a Hash/Object
 
 array_extension.js
 	Array.prototype.dup()
+		returns copy of given array
 	Array.prototype.shuffle()
+		randomizes order of given array in place
 	Array.prototype.contains(v)
+		returns boolean indicating whether given array contains given value of array of values
 	Array.prototype.index_of(v)
+		returns index of given value in given array
 	Array.prototype.sum()
+		returns sum float value of given array
 	Array.prototype.average()
+		returns average float value of given array
 	Array.prototype.median()
+		returns median float value of given array
+	Array.prototype.to_f()
+		converts each element of given array to a float
 
 number_extension.js
 	Number.prototype.with_sign()
+		returns number as string with sign prefix
 	Number.prototype.even()
+		returns boolean of whether number is even
 	Number.prototype.odd()
+		returns boolean of whether number is odd
 
 object_extension.js
 	Object.prototype.dup()
+		returns copy of given object (not yet perfected)
 	Object.prototype.inspect()
+		returns string of given object
 
 string_extension.js
 	String.prototype.to_f()
+		returns float converted from given string
 	String.prototype.to_i()
+		returns integer converted from given string
 	String.prototype.blank()
+		returns boolean of whether string is blank (ie. /^\s*$/ )
 	String.prototype.to_date()
+		returns date converted from given string
 	String.prototype.decodeURI()
+		returns decoded URI string converted from given string
 
