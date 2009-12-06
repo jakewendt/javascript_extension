@@ -1,0 +1,26 @@
+
+array_extension.js
+	Array.prototype.dup()
+	Array.prototype.shuffle()
+	Array.prototype.contains(v)
+	Array.prototype.index_of(v)
+	Array.prototype.sum()
+	Array.prototype.average()
+	Array.prototype.median()
+
+number_extension.js
+	Number.prototype.with_sign()
+	Number.prototype.even()
+	Number.prototype.odd()
+
+object_extension.js
+	Object.prototype.dup()
+	Object.prototype.inspect()
+
+string_extension.js
+	String.prototype.to_f()
+	String.prototype.to_i()
+	String.prototype.blank()
+	String.prototype.to_date()
+	String.prototype.decodeURI()
+
