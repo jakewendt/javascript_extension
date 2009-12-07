@@ -23,8 +23,20 @@ function params(){
 	return p;
 }
 
-include('array_extension.js');
-include('string_extension.js');
-include('number_extension.js');
-include('object_extension.js');
-include('date_extension.js');
+var components = [
+	'array_extension.js',
+	'string_extension.js',
+	'number_extension.js',
+	'object_extension.js',
+	'date_extension.js'
+];
+var script_path = '';
+var scripts = document.getElementsByTagName("script");
+for( var i=0; i<scripts.length; i++ )
+	if( scripts[i].src.match(/javascript_extension\.js(\?.*)?$/) ){
+		script_path = scripts[i].src.replace(/javascript_extension\.js(\?.*)?$/,'');
+		break;
+	}
+
+for( var i=0; i<components.length; i++ )
+	include( script_path + components[i] );
